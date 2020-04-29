@@ -1,33 +1,45 @@
-.header{
-  position: relative;
-  padding-top: 45px;
-  padding-bottom: 130px;
-  background-color: $color-white;
-  &__container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__logo{
-    display: block;
-  }
-  &__list{
-    display: flex;
-    align-items: center;
-  }
-  &__link{
-    display: block;
-    li:not(:last-child) &{
-      margin-right: 32px;
-    }
-  }
-  &__sign-up-btn{
-    font-weight: 700;
-    line-height: 21px;
-    padding: 16px 28px;
-    background-color: $color-main-brand;
-    color: $color-white;
-    border-radius: 4px;
-  }
+.header
+{
+    position: relative;
 
+    padding-top: 45px;
+    padding-bottom: 130px;
+
+    background-color: $color-white;
+    &__container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo
+    {
+        display: block;
+    }
+    &__list
+    {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__link
+    {
+        display: block;
+        li:not(:last-child) &
+        {
+            margin-right: 32px;
+        }
+    }
+    &__sign-up-btn
+    {
+        font-weight: 700;
+        line-height: 21px;
+
+        padding: 16px 28px;
+
+        color: $color-white;
+        border-radius: 4px;
+        background-color: $color-main-brand;
+    }
 }
