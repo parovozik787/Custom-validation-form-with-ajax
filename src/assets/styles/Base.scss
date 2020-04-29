@@ -2,14 +2,14 @@ body
 {
     font:
     {
-        //family: var(--font-main);
-        //size: var(--font-size);
+        family: $font-main;
+        size: $font-size;
         weight: 500;
     };
 
     position: relative;
 
-    //color: var(--color-black);
+    color: $color-black;
 }
 
 .container
