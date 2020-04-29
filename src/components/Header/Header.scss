@@ -1,39 +1,45 @@
-.header{
-	position: relative;
+.header
+{
+    position: relative;
 
-	padding-top: 45px;
-	padding-bottom: 130px;
+    padding-top: 45px;
+    padding-bottom: 130px;
 
-	background-color: $color-white;
-	&__container{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		}
-	&__logo{
-		display: block;
-		}
-	&__list{
-		display: flex;
-		align-items: center;
-		}
+    background-color: #fff;
+    &__container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo
+    {
+        display: block;
+    }
+    &__list
+    {
+        display: flex;
+        align-items: center;
+    }
 
 
-	&__link{
-		display: block;
-		li:not(:last-child) &{
-			margin-right: 32px;
-			}
-		}
-	&__sign-up-btn{
-		padding: 16px 28px;
+    &__link
+    {
+        display: block;
+        li:not(:last-child) &
+        {
+            margin-right: 32px;
+        }
+    }
+    &__sign-up-btn
+    {
+        font-weight: 700;
+        line-height: 21px;
 
-		color: #fff;
-		border-radius: 4px;
-		background-color: #ff5a5f;
+        padding: 16px 28px;
 
-		font-weight: 700;
-		line-height: 21px;
-		}
-
-	}
+        color: #fff;
+        border-radius: 4px;
+        background-color: #ff5a5f;
+    }
+}
