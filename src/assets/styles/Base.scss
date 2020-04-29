@@ -1,0 +1,21 @@
+body
+{
+    font:
+    {
+        //family: var(--font-main);
+        //size: var(--font-size);
+        weight: 500;
+    };
+
+    position: relative;
+
+    //color: var(--color-black);
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

@@ -6,7 +6,6 @@
   "scripts": {
     "build": "yarn cache clean && rm -rf build && yarn build:parcel",
     "build:parcel": "parcel build src/pages/Home/Home.pug -d build --public-url ./ --out-file index.html",
-    "csscomb": "csscomb src -c .csscomb.json",
     "prettify:fix": "prettier --write",
     "start": "yarn cache clean && rm -rf dist && parcel src/pages/Home/Home.pug --port 8080 --open "
   },
@@ -23,7 +22,7 @@
       "yarn prettify:fix"
     ],
     "*.scss": [
-      "css --tty-mode --"
+      "csscomb --tty-mode --"
     ],
     "package.json": [
       "sort-package-json"
