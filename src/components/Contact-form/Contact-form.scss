@@ -1,0 +1,203 @@
+.contact-form
+{
+    position: absolute;
+    right: $padding-size;
+    bottom: 0;
+
+    padding: 36px 48px 40px;
+
+    border-radius: 8px 8px 0 0;
+    background-color: $color-white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .12);
+    &__title
+    {
+        font-size: 36px;
+        font-weight: 700;
+
+        margin-bottom: 38px;
+    }
+    &__input-list > li
+    {
+        margin-bottom: 28px;
+    }
+    &__label
+    {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14px;
+
+        display: block;
+
+        margin-bottom: 8px;
+
+        letter-spacing: .08em;
+        text-transform: uppercase;
+
+        color: $color-label;
+    }
+    &__input
+    {
+        font-size: 16px;
+        line-height: 16px;
+
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 320px;
+        padding: 14px 16px;
+
+        border: 1px solid $color-border-input;
+        border-radius: 4px;
+
+        @include placeholder
+        {
+            font-size: inherit;
+
+            transition: text-indent .4s ease-out, color .2s ease-out;
+            text-indent: 0;
+            text-overflow: ellipsis;
+
+            color: $color-placeholder;
+        }
+        &:focus
+        {
+            border-left: 2px solid $color-focus;
+            outline: none;
+
+            @include placeholder
+            {
+                text-indent: 320px;
+
+                color: transparent;
+            }
+        }
+    }
+    &__textarea
+    {
+        height: 115px;
+
+        resize: none;
+
+        outline: none;
+    }
+    &__submit-button
+    {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 19px;
+
+        width: 100%;
+        padding: 16px 0;
+
+        color: $color-white;
+        border-radius: 4px;
+        background: $color-main-brand;
+    }
+}
+
+
+
+
+.select-hidden
+{
+    display: none;
+    visibility: hidden;
+
+    padding-right: 10px;
+}
+
+.select
+{
+    font-size: 16px;
+
+    position: relative;
+
+    display: inline-block;
+
+    width: 100%;
+
+    cursor: pointer;
+}
+
+.select-styled
+{
+    font-size: 16px;
+    line-height: 16px;
+
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 320px;
+    padding: 14px 16px;
+
+    border: 1px solid $color-border-input;
+    border-radius: 4px;
+}
+.select-styled:after
+{
+    position: absolute;
+    top: calc(50% + 2px);
+    right: 16px;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+    transform: translateY(-50%);
+
+    border: 4px solid transparent;
+    border-color: #212121 transparent transparent transparent;
+}
+.select-styled:active,
+.select-styled.active
+{
+    border-left: 2px solid $color-focus;
+}
+.select-styled:active:after,
+.select-styled.active:after
+{
+    z-index: 1000;
+    top: calc(50% - 2px);
+
+    border-color: transparent transparent #212121 transparent;
+}
+
+.select-options
+{
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    right: 0;
+    left: 0;
+
+    display: none;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    border: 1px solid $color-border-input;
+    border-radius: 4px;
+    background: $color-white;
+    box-shadow: 0 15px 46px rgba(26, 26, 29, .12);
+}
+.select-options li
+{
+    margin: 0;
+    padding: 12px 0;
+
+    -webkit-transition: all .15s ease-in;
+       -moz-transition: all .15s ease-in;
+         -o-transition: all .15s ease-in;
+            transition: all .15s ease-in;
+    text-indent: 15px;
+}
+.select-options li:hover
+{
+    color: $color-focus;
+    background-color: #f7f7f7;
+}

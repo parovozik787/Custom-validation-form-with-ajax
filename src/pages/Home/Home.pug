@@ -2,10 +2,14 @@ doctype html
 html(lang="en")
   head
     include ./../../components/Meta/Meta
-    link(rel='icon' href='./../../assets/images/favicon.png' type='image/png')
+    link(
+      rel="icon",
+      href="./../../assets/images/favicon.png",
+      type="image/png"
+    )
     title Involve
   body
     include ./../../assets/icons/icons
     include ./../../components/Header/Header
-    include ./../../components/Map/Map
+    include ../../components/Main/Main
     script(src="./Home.js")

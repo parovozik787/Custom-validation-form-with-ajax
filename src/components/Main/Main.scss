@@ -1,8 +1,9 @@
-.map
+.main
 {
     position: relative;
 
-    height: calc(100vh - 228px);
+    height: calc(100vh - #{$header-height});
+    min-height: calc(#{$form-height - 85px});
     &__iframe-block
     {
         width: 100%;

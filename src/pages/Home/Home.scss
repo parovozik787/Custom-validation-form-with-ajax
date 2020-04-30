@@ -1,7 +1,10 @@
 @import '../../assets/styles/Variables';
+@import '../../assets/styles/Mixins';
 @import '../../assets/styles/Reset';
 @import '../../assets/styles/Base';
 @import '../../assets/styles/Fonts';
 @import './../../components/Header/Header';
-@import './../../components/Map/Map';
+@import '../../components/Main/Main';
 @import './../../components/Contact-info/Contact-info';
+@import './../../components/Contact-form/Contact-form';
+@import './../../components/Contact-form-select/Contact-form-select';
