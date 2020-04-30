@@ -1,0 +1,35 @@
+form.contact-form
+  fieldset
+    legend.contact-form__title Contact Us
+    ul.contact-form__input-list(role="none")
+      li
+        label.contact-form__label(for="subject") Subject
+        include ./../../components/Contact-form-select/Contact-form-select
+      li
+        label.contact-form__label(for="name") Name
+        input#name.contact-form__input(,
+          type="text",
+          name="name",
+          placeholder="Enter your name...",
+          required
+        )
+      li
+        label.contact-form__label(for="phone") Phone number
+        input#phone.contact-form__input(,
+          type="tel",
+          name="phone",
+          placeholder="Enter your phone number...",
+          required
+        )
+      li
+        label.contact-form__label(for="email") Email
+        input#email.contact-form__input(,
+          type="email",
+          name="email",
+          placeholder="Enter your email address...",
+          required
+        )
+      li
+        label.contact-form__label(for="message") Message
+        textarea#message.contact-form__input.contact-form__textarea(, placeholder="Your message...")
+      button.contact-form__submit-button Send
