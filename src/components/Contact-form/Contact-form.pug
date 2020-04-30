@@ -1,4 +1,4 @@
-form.contact-form
+form.contact-form.contact-form--shown
   fieldset
     legend.contact-form__title Contact Us
     ul.contact-form__input-list(role="none")
@@ -7,7 +7,8 @@ form.contact-form
         include ./../../components/Contact-form-select/Contact-form-select
       li
         label.contact-form__label(for="name") Name
-        input#name.contact-form__input(,
+        input#name.contact-form__input(
+          ,
           type="text",
           name="name",
           placeholder="Enter your name...",
@@ -15,7 +16,8 @@ form.contact-form
         )
       li
         label.contact-form__label(for="phone") Phone number
-        input#phone.contact-form__input(,
+        input#phone.contact-form__input(
+          ,
           type="tel",
           name="phone",
           placeholder="Enter your phone number...",
@@ -23,7 +25,8 @@ form.contact-form
         )
       li
         label.contact-form__label(for="email") Email
-        input#email.contact-form__input(,
+        input#email.contact-form__input(
+          ,
           type="email",
           name="email",
           placeholder="Enter your email address...",
@@ -31,5 +34,10 @@ form.contact-form
         )
       li
         label.contact-form__label(for="message") Message
-        textarea#message.contact-form__input.contact-form__textarea(, placeholder="Your message...")
-      button.contact-form__submit-button Send
+        textarea#message.contact-form__textarea.contact-form__input(
+          placeholder="Your message...",
+          required
+        )
+      button.contact-form__submit-button
+        | Send
+        include ./../../components/Preloader/Preloader

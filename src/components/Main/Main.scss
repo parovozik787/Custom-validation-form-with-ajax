@@ -15,4 +15,16 @@
         bottom: 0;
         left: 0;
     }
+    &__form-wrap
+    {
+        position: absolute;
+        right: $padding-size;
+        bottom: 0;
+
+        min-height: $form-height;
+
+        border-radius: 8px 8px 0 0;
+        background-color: $color-white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, .12);
+    }
 }
