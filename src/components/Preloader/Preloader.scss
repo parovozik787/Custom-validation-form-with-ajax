@@ -1,0 +1,101 @@
+.lds-default
+{
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+
+    width: 24px;
+    height: 24px;
+
+    transform: translate(-50%, -50%);
+    .contact-form--inactive &
+    {
+        display: block;
+    }
+}
+.lds-default div
+{
+    position: absolute;
+
+    width: 4px;
+    height: 4px;
+
+    animation: lds-default .7s linear infinite;
+
+    border-radius: 50%;
+    background: #fff;
+}
+.lds-default div:nth-child(1)
+{
+    top: 0;
+    left: 10px;
+
+    animation-delay: 0s;
+}
+.lds-default div:nth-child(2)
+{
+    top: 3px;
+    right: 3px;
+
+    animation-delay: -.1s;
+}
+.lds-default div:nth-child(3)
+{
+    top: 10px;
+    right: 0;
+
+    animation-delay: -.2s;
+}
+.lds-default div:nth-child(4)
+{
+    right: 3px;
+    bottom: 3px;
+
+    animation-delay: -.3s;
+}
+.lds-default div:nth-child(5)
+{
+    bottom: 0;
+    left: 10px;
+
+    animation-delay: -.4s;
+}
+.lds-default div:nth-child(6)
+{
+    bottom: 3px;
+    left: 3px;
+
+    animation-delay: -.5s;
+}
+.lds-default div:nth-child(7)
+{
+    top: 10px;
+    left: 0;
+
+    animation-delay: -.6s;
+}
+.lds-default div:nth-child(8)
+{
+    top: 3px;
+    left: 3px;
+
+    animation-delay: -.7s;
+}
+
+@keyframes lds-default
+{
+    0%,
+    20%,
+    80%,
+    100%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.5);
+    }
+}
