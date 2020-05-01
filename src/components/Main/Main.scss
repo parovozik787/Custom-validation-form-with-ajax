@@ -28,3 +28,30 @@
         box-shadow: 0 4px 20px rgba(0, 0, 0, .12);
     }
 }
+
+
+@media all and (max-width: 768px)
+{
+    .main
+    {
+        &__iframe-block
+        {
+            position: relative;
+
+            height: calc(100vh - #{$header-height-mobile} - #{$contact-info-height});
+        }
+        &__contact-info
+        {
+            position: relative;
+
+            max-width: none;
+        }
+        &__form-wrap
+        {
+            position: relative;
+            right: 0;
+
+            margin-bottom: 15px;
+        }
+    }
+}

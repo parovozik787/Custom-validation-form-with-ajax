@@ -138,3 +138,15 @@
         color: $color-border-input;
     }
 }
+
+@media all and (max-width: 768px)
+{
+    .contact-form
+    {
+        padding: 36px 23px 40px;
+        &__input
+        {
+            min-width: 100%;
+        }
+    }
+}
