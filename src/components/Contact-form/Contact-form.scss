@@ -17,9 +17,13 @@
         font-weight: 700;
 
         margin-bottom: 38px;
+
+        color: $color-black !important;
     }
     &__input-list > li
     {
+        position: relative;
+
         margin-bottom: 28px;
     }
     &__label
@@ -75,6 +79,29 @@
                 color: transparent;
             }
         }
+        &.invalid
+        {
+            border-width: 1px;
+            border-color: red;
+            & + span
+            {
+                display: block;
+
+                color: $color-main-brand;
+            }
+        }
+    }
+    &__error-message
+    {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: none;
     }
     &__textarea
     {

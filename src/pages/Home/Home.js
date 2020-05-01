@@ -1,8 +1,10 @@
 import "./Home.scss";
 import { Header } from "../../components/Header/Header";
 import { CustomSelect } from "../../components/Contact-form-select/Contact-form-select";
-import { FormValidate } from "../../components/Contact-form/Contact-form";
+import { FormValidation } from "../../components/Contact-form/Contact-form";
+import { FeedbackSwap } from "../../components/Feedback-block/Feedback-block";
 
 CustomSelect();
-FormValidate();
+FormValidation();
+FeedbackSwap();
 Header();
