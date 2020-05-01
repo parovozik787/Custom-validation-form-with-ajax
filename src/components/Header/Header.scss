@@ -12,6 +12,12 @@
         align-items: center;
         justify-content: space-between;
     }
+    &__logo-container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     &__logo
     {
         display: block;
@@ -41,5 +47,40 @@
         color: $color-white;
         border-radius: 4px;
         background-color: $color-main-brand;
+    }
+}
+
+@media all and (max-width: 768px)
+{
+    .header
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &__container
+        {
+            flex-direction: column;
+        }
+        &__logo-container
+        {
+            width: 100%;
+        }
+        &__list
+        {
+            flex-direction: column;
+        }
+        &__link
+        {
+            li:not(:last-child) &
+            {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        &__nav
+        {
+            display: none;
+
+            padding: 20px 0;
+        }
     }
 }
