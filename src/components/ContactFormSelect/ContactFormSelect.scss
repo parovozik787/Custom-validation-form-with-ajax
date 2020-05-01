@@ -104,3 +104,11 @@
     color: $color-focus;
     background-color: #f7f7f7;
 }
+
+@media all and (max-width: 768px)
+{
+    .select-styled
+    {
+        min-width: 100%;
+    }
+}
