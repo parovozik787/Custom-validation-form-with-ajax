@@ -6,9 +6,8 @@
     align-items: center;
     justify-content: center;
 
-    width: 100%;
-    max-width: 28px;
-    height: 100%;
+    width: 26px;
+    height: 17px;
 
     cursor: pointer;
     transition: all .2s linear;
@@ -16,7 +15,6 @@
     $this: &;
     &--active
     {
-        transform: rotate(180deg);
         &:before
         {
             position: absolute;
@@ -53,18 +51,18 @@
         }
         &:after
         {
-            top: -9px;
+            top: 7px;
         }
         &:before
         {
-            bottom: -9px;
+            top: 14px;
         }
         #{$this}--active &
         {
             height: 0;
             &:after
             {
-                top: 0;
+                top: 6px;
 
                 width: 100%;
 
@@ -72,7 +70,7 @@
             }
             &:before
             {
-                top: 0;
+                top: 6px;
 
                 transform: rotate(45deg);
             }
