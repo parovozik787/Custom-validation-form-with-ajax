@@ -15,6 +15,7 @@
     {
         font-size: 36px;
         font-weight: 700;
+        line-height: 44px;
 
         margin-bottom: 38px;
 
@@ -25,12 +26,17 @@
         position: relative;
 
         margin-bottom: 28px;
+
+        &:last-of-type
+        {
+            margin-bottom: 34px;
+        }
     }
     &__label
     {
         font-size: 12px;
         font-weight: 700;
-        line-height: 14px;
+        line-height: 12px;
 
         display: block;
 
@@ -105,6 +111,8 @@
     }
     &__textarea
     {
+        display: block;
+
         height: 115px;
 
         resize: none;
@@ -114,8 +122,8 @@
     &__submit-button
     {
         font-size: 16px;
-        font-weight: bold;
-        line-height: 24px;
+        font-weight: 700;
+        line-height: 20px;
 
         position: relative;
 

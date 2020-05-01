@@ -36,13 +36,17 @@
         {
             margin-right: 32px;
         }
+        li:nth-last-child(2) &
+        {
+            margin-right: 48px;
+        }
     }
     &__sign-up-btn
     {
         font-weight: 700;
         line-height: 21px;
 
-        padding: 16px 28px;
+        padding: 16px 31px;
 
         color: $color-white;
         border-radius: 4px;
