@@ -3,7 +3,7 @@ export const FormValidation = () => {
   const inputPhone = document.querySelector("#phone");
   const inputEmail = document.querySelector("#email");
 
-  inputName.addEventListener("keyup", () => {
+  inputName.addEventListener("input", () => {
     if (inputName.value.length === 0) {
       inputName.classList.remove("invalid");
     } else if (
@@ -17,7 +17,7 @@ export const FormValidation = () => {
     }
   });
 
-  inputPhone.addEventListener("keyup", () => {
+  inputPhone.addEventListener("input", () => {
     if (inputPhone.value.length === 0) {
       inputPhone.classList.remove("invalid");
     } else if (
@@ -31,7 +31,7 @@ export const FormValidation = () => {
     }
   });
 
-  inputEmail.addEventListener("keyup", () => {
+  inputEmail.addEventListener("input", () => {
     if (inputEmail.value.length === 0) {
       inputEmail.classList.remove("invalid");
     } else if (

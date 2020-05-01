@@ -8,11 +8,11 @@ section.main
       style="border:0;",
       allowfullscreen="",
       aria-hidden="false",
-      tabindex="0"
+      tabindex="-1"
     )
   - let customClass = 'main__contact-info';
-    include ./../../components/Contact-info/Contact-info
+    include ../ContactInfo/ContactInfo
   .container
     .main__form-wrap
-      include ./../../components/Contact-form/Contact-form
-      include ./../../components/Feedback-block/Feedback-block
+      include ../ContactForm/ContactForm
+      include ../FeedbackBlock/FeedbackBlock
