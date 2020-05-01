@@ -1,12 +1,12 @@
 export const FeedbackSwap = () => {
   const form = document.querySelector(".contact-form");
-  let formContactClassList = [
+  const formContactClassList = [
     "contact-form--inactive",
     "contact-form--shown",
     "contact-form--hide",
   ];
   const feedbackBlock = document.querySelector(".feedback");
-  let feedbackBlockClassList = ["feedback--hide", "feedback--shown"];
+  const feedbackBlockClassList = ["feedback--hide", "feedback--shown"];
   const feedbackButton = document.querySelector(".feedback__button");
 
   form.addEventListener("submit", (event) => {
