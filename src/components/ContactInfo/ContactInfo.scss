@@ -1,0 +1,43 @@
+.contact-info
+{
+    max-width: 300px;
+    padding: 41px 32px 43px;
+    &__bg
+    {
+        position: absolute;
+        z-index: 30;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        border-radius: 0 8px 0 0;
+        background-color: rgba(255, 255, 255, .45);
+
+                backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+    &__item
+    {
+        font-size: 14px;
+        line-height: 24px;
+
+        position: relative;
+        z-index: 100;
+
+        display: flex;
+        align-items: center;
+        &:not(:last-child)
+        {
+            margin-bottom: 35px;
+        }
+    }
+    &__icon
+    {
+        margin-right: 24px;
+        & svg
+        {
+            vertical-align: middle;
+        }
+    }
+}
