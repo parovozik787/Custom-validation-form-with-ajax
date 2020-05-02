@@ -147,7 +147,8 @@
     }
 }
 
-@media all and (max-width: 768px)
+
+@include tablet
 {
     .contact-form
     {

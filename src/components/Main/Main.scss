@@ -30,7 +30,7 @@
 }
 
 
-@media all and (max-width: 768px)
+@include tablet
 {
     .main
     {
@@ -39,6 +39,7 @@
             position: relative;
 
             height: calc(100vh - #{$header-height-mobile} - #{$contact-info-height});
+            min-height: 250px;
         }
         &__contact-info
         {
