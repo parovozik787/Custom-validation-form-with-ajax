@@ -13,20 +13,6 @@
     transition: all .2s linear;
 
     $this: &;
-    &--active
-    {
-        &:before
-        {
-            position: absolute;
-            top: 0;
-            right: -24px;
-
-            width: calc(100% + 48px);
-            height: 100%;
-
-            content: '';
-        }
-    }
     &__line
     {
         width: 100%;
