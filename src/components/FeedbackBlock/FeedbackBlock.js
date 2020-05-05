@@ -14,7 +14,7 @@ export const FeedbackSwap = () => {
 
     let xhr = new XMLHttpRequest();
 
-    xhr.open("POST", "form.php", true);
+    xhr.open("GET", "form.php", true);
     xhr.setRequestHeader("Content-Type", "Application/x-www-form-unlencoded");
     xhr.onreadystatechange = function () {
       form.classList.add("contact-form--inactive");
