@@ -18,11 +18,9 @@ export const FeedbackSwap = () => {
     xhr.setRequestHeader("Content-Type", "Application/x-www-form-unlencoded");
     xhr.onreadystatechange = function () {
       form.classList.add("contact-form--inactive");
-      console.log(xhr.status);
       if (xhr.readyState === 4 && xhr.status === 200) {
         setTimeout(show, 2000, feedbackBlock);
       }
-      console.log(xhr.status);
     };
     xhr.send();
   };
