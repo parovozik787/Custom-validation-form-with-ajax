@@ -1,43 +1,38 @@
 form.contact-form.contact-form--shown
   fieldset
     legend.contact-form__title Contact Us
-    ul.contact-form__input-list
-      li
-        label.contact-form__label(for="subject") Subject
-        include ../ContactFormSelect/ContactFormSelect
-      li
-        label.contact-form__label(for="name") Name
-        input#name.contact-form__input(
-          type="text",
-          name="name",
-          placeholder="Enter your name...",
-          required
-        )
-        span.contact-form__error-message Error Message
-      li
-        label.contact-form__label(for="phone") Phone number
-        input#phone.contact-form__input(
-          type="tel",
-          name="phone",
-          placeholder="Enter your phone number...",
-          required
-        )
-        span.contact-form__error-message Error Message
-      li
-        label.contact-form__label(for="email") Email
-        input#email.contact-form__input(
-          type="email",
-          name="email",
-          placeholder="Enter your email address...",
-          required
-        )
-        span.contact-form__error-message Error Message
-      li
-        label.contact-form__label(for="message") Message
-        textarea#message.contact-form__textarea.contact-form__input(
-          placeholder="Your message...",
-          required
-        )
-      button.contact-form__submit-button
-        | Send
-        include ./../../components/Preloader/Preloader
+    .contact-form__separator
+      label.contact-form__label(for="subject") Subject
+      include ../ContactFormSelect/ContactFormSelect
+    .contact-form__separator
+      label.contact-form__label(for="name") Name
+      input#name.contact-form__input(
+        type="text",
+        name="name",
+        placeholder="Enter your name..."
+      )
+    .contact-form__separator
+      span.contact-form__error-message Error Message
+      label.contact-form__label(for="phone") Phone number
+      input#phone.contact-form__input(
+        type="tel",
+        name="phone",
+        placeholder="Enter your phone number..."
+      )
+      span.contact-form__error-message Error Message
+    .contact-form__separator
+      label.contact-form__label(for="email") Email
+      input#email.contact-form__input(
+        type="email",
+        name="email",
+        placeholder="Enter your email address..."
+      )
+      span.contact-form__error-message Error Message
+    .contact-form__separator
+      label.contact-form__label(for="message") Message
+      textarea#message.contact-form__textarea.contact-form__input(
+        placeholder="Your message..."
+      )
+    button.contact-form__submit-button
+      | Send
+      include ./../../components/Preloader/Preloader
