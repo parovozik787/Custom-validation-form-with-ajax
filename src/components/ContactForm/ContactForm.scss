@@ -7,6 +7,7 @@
     {
         display: block;
     }
+
     &--hide
     {
         display: none;
@@ -19,24 +20,21 @@
 
         margin-bottom: 38px;
 
-        color: $color-black !important;
+        color: $color-black;
     }
-    &__input-list > li
+    &__separator
     {
         position: relative;
 
         margin-bottom: 28px;
-
-        &:last-of-type
-        {
-            margin-bottom: 34px;
-        }
     }
     &__label
     {
         font-size: 12px;
         font-weight: 700;
         line-height: 12px;
+
+        position: relative;
 
         display: block;
 
@@ -141,7 +139,7 @@
             color: transparent;
         }
     }
-    &--inactive *
+    &--inactive * :not(legend)
     {
         color: $color-border-input;
     }
